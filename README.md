@@ -5,7 +5,7 @@ Script to generate the names 人名: [![Open In Colab](https://colab.research.go
 
 Script to generate the offices 官職名: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cbdb-project/named-entities-for-premodern-chinese-history-research/blob/master/scripts/generate_CBDB_office_entities.ipynb)
 
-Script to generate the entries 入仕方式: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cbdb-project/named-entities-for-premodern-chinese-history-research/blob/master/scripts/generate_CBDB_entries_entities.ipynb)
+Script to generate the entries 入仕方式名: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cbdb-project/named-entities-for-premodern-chinese-history-research/blob/master/scripts/generate_CBDB_entries_entities.ipynb)
 
 # Cooked Data
 

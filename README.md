@@ -15,8 +15,8 @@ Person names 人名: [./cbdb_entity_names.csv](https://github.com/cbdb-project/n
 
 Office titles 官職名: [./cbdb_entity_offices.csv](https://github.com/cbdb-project/named-entities-for-premodern-chinese-history-research/blob/main/cbdb_entity_offices.csv)
 
-Administration types 行政區劃類別名: [./cbdb_address_types.csv](https://github.com/cbdb-project/named-entities-for-premodern-chinese-history-research/blob/main/cbdb_entity_address_types.csv)
+Administration types 行政區劃類別名: [./cbdb_entity_address_types.csv](https://github.com/cbdb-project/named-entities-for-premodern-chinese-history-research/blob/main/cbdb_entity_address_types.csv)
 
-Entry types 入仕方式名: [./cbdb_entity_address_types.csv](https://github.com/cbdb-project/named-entities-for-premodern-chinese-history-research/blob/main/cbdb_entity_entries.csv)
+Entry types 入仕方式名: [./cbdb_entity_entries.csv](https://github.com/cbdb-project/named-entities-for-premodern-chinese-history-research/blob/main/cbdb_entity_entries.csv)
 
 Kinship types 親屬關係類別: [./cbdb_entity_kinship_types.csv](https://github.com/cbdb-project/named-entities-for-premodern-chinese-history-research/blob/main/cbdb_entity_kinship_types.csv)

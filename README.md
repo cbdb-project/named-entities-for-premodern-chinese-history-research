@@ -1,11 +1,11 @@
-# named-entities-for-premodern-chinese-history-research
-Repo to generate and host named entities for premodern chinese history research
+# Named-entities-for-premodern-chinese-history-research
+Repo to generate and host named entities for premodern chinese history research 本項目可協助您生成面向中國歷史研究的各種實體
 
-Script to generate the names: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cbdb-project/named-entities-for-premodern-chinese-history-research/blob/master/scripts/generate_CBDB_name_entities.ipynb)
+Script to generate the names 人名: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cbdb-project/named-entities-for-premodern-chinese-history-research/blob/master/scripts/generate_CBDB_name_entities.ipynb)
 
-Script to generate the offices: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cbdb-project/named-entities-for-premodern-chinese-history-research/blob/master/scripts/generate_CBDB_office_entities.ipynb)
+Script to generate the offices 官名: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cbdb-project/named-entities-for-premodern-chinese-history-research/blob/master/scripts/generate_CBDB_office_entities.ipynb)
 
-Script to generate the entries: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cbdb-project/named-entities-for-premodern-chinese-history-research/blob/master/scripts/generate_CBDB_entries_entities.ipynb)
+Script to generate the entries 入仕方式: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cbdb-project/named-entities-for-premodern-chinese-history-research/blob/master/scripts/generate_CBDB_entries_entities.ipynb)
 
 # Cooked Data
 

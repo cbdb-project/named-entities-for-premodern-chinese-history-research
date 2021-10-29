@@ -11,7 +11,7 @@ Script to generate the entries: [![Open In Colab](https://colab.research.google.
 
 You can either create your rules to generate the entities, or use our released data direclty 除了根據您的需求自定義生成數據的條件外，我們還向您提供面向通用需求的各種實體列表:
 
-Person names 人名: [./bdb_entity_names.csv](https://github.com/cbdb-project/named-entities-for-premodern-chinese-history-research/blob/main/cbdb_entity_names.csv)
+Person names 人名: [./cbdb_entity_names.csv](https://github.com/cbdb-project/named-entities-for-premodern-chinese-history-research/blob/main/cbdb_entity_names.csv)
 
 Office titles 官職名: [./cbdb_entity_offices.csv](https://github.com/cbdb-project/named-entities-for-premodern-chinese-history-research/blob/main/cbdb_entity_offices.csv)
 

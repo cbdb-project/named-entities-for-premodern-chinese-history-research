@@ -19,7 +19,7 @@ Administration types 行政區劃類別名: [./cbdb_entity_address_types.csv](ht
 
 Entry types 入仕方式名: [./cbdb_entity_entries.csv](https://github.com/cbdb-project/named-entities-for-premodern-chinese-history-research/blob/main/cbdb_entity_entries.csv)
 
-Kinship types 親屬關係類別: [./cbdb_entity_kinship_types.csv](https://github.com/cbdb-project/named-entities-for-premodern-chinese-history-research/blob/main/cbdb_entity_kinship_types.csv)
+Kinship types 親屬關係類別名: [./cbdb_entity_kinship_types.csv](https://github.com/cbdb-project/named-entities-for-premodern-chinese-history-research/blob/main/cbdb_entity_kinship_types.csv)
 
 # Licence
 [![CC BY-NC-SA 4.0][cc-by-nc-sa-shield]][cc-by-nc-sa]

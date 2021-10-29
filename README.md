@@ -1,5 +1,5 @@
 # Named-entities-for-premodern-chinese-history-research
-Repo to generate and host named entities for premodern chinese history research 本項目可協助您生成面向中國歷史研究的各種實體
+To generate and host named entities for premodern chinese history research 本項目可協助您生成面向中國歷史研究的各種命名實體
 
 Script to generate the names 人名: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cbdb-project/named-entities-for-premodern-chinese-history-research/blob/master/scripts/generate_CBDB_name_entities.ipynb)
 
@@ -9,7 +9,7 @@ Script to generate the entries 入仕方式: [![Open In Colab](https://colab.res
 
 # Cooked Data
 
-You can either create your rules to generate the entities, or use our released data direclty 除了根據您的需求自定義生成數據的條件外，我們還向您提供面向通用需求的各種實體列表:
+You can either create your rules to generate the named entities, or use our released data direclty 除了根據您的需求自定義生成數據的條件外，我們還向您提供面向通用需求的各種實體列表:
 
 Person names 人名: [./cbdb_entity_names.csv](https://github.com/cbdb-project/named-entities-for-premodern-chinese-history-research/blob/main/cbdb_entity_names.csv)
 

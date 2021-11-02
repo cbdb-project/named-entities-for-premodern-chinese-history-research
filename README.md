@@ -17,6 +17,8 @@ Person names 人名: [./cbdb_entity_names.csv](https://github.com/cbdb-project/n
 
 Office titles 官職名: [./cbdb_entity_offices.csv](https://github.com/cbdb-project/named-entities-for-premodern-chinese-history-research/blob/main/cbdb_entity_offices.csv)
 
+Addresses 地址名：[./cbdb_entity_addresses.csv](https://github.com/cbdb-project/named-entities-for-premodern-chinese-history-research/blob/main/cbdb_entity_addresses.csv)
+
 Administration types 行政區劃類別名: [./cbdb_entity_address_types.csv](https://github.com/cbdb-project/named-entities-for-premodern-chinese-history-research/blob/main/cbdb_entity_address_types.csv)
 
 Entry types 入仕方式名: [./cbdb_entity_entries.csv](https://github.com/cbdb-project/named-entities-for-premodern-chinese-history-research/blob/main/cbdb_entity_entries.csv)

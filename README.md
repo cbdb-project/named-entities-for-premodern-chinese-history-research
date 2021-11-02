@@ -7,6 +7,8 @@ Script to generate the offices 官職名: [![Open In Colab](https://colab.resear
 
 Script to generate the entries 入仕方式名: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cbdb-project/named-entities-for-premodern-chinese-history-research/blob/master/scripts/generate_CBDB_entries_entities.ipynb)
 
+Script to generate the addresses 地址名: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cbdb-project/named-entities-for-premodern-chinese-history-research/blob/master/scripts/generate_CBDB_address_entities.ipynb)
+
 # Cooked Data
 
 You can either create your rules to generate the named entities, or use our released data direclty 除了根據您的需求自定義生成數據的條件外，我們還向您提供面向通用需求的各種實體列表:

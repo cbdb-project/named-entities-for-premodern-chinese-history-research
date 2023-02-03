@@ -75,6 +75,7 @@ for belongs_row in belongs_list:
 			if combined_list != None:
 				output.append(combined_list)
 				break
+
 # 4. addr_upper_shorter + addr_lower_shorter
 print("4. addr_upper_shorter + addr_lower_shorter...")
 for belongs_row in belongs_list:
@@ -83,14 +84,15 @@ for belongs_row in belongs_list:
 	else:
 		belongs_lower = addr_id_to_name_dict[belongs_row[0]]
 		belongs_upper = addr_id_to_name_dict[belongs_row[1]]
-		for addr_type_row in addr_type_list:
-			belongs_upper_shorter = rstrip_word(belongs_upper,addr_type_row)
-			belongs_lower_shorter = rstrip_word(belongs_lower,addr_type_row)
-			if belongs_upper_shorter == belongs_upper or belongs_lower_shorter == belongs_lower: continue
-			combined_list = combine_addr(belongs_upper_shorter, belongs_lower_shorter)
-			if combined_list != None:
-				output.append(combined_list)
-				break
+		for addr_type_row_upper in addr_type_list:
+			belongs_upper_shorter = rstrip_word(belongs_upper,addr_type_row_upper)
+			for addr_type_row_lower in addr_type_list:
+				belongs_lower_shorter = rstrip_word(belongs_lower,addr_type_row_lower)
+				if belongs_upper_shorter == belongs_upper or belongs_lower_shorter == belongs_lower: continue
+				combined_list = combine_addr(belongs_upper_shorter, belongs_lower_shorter)
+				if combined_list != None:
+					output.append(combined_list)
+					break
 
 # 5. remove possible duplicates
 print("5. remove possible duplicates...")

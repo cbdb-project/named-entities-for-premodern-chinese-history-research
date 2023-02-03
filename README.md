@@ -21,6 +21,8 @@ Addresses 地址名：[./cbdb_entity_addresses.csv](https://github.com/cbdb-proj
 
 Administration types 行政區劃類別名: [./cbdb_entity_address_types.csv](https://github.com/cbdb-project/named-entities-for-premodern-chinese-history-research/blob/main/cbdb_entity_address_types.csv)
 
+Address and belongs pairs 地址與上層行政區劃二元組合名: [./cbdb_address_belongs_combination_pairs.csv](https://github.com/cbdb-project/named-entities-for-premodern-chinese-history-research/blob/main/cbdb_address_belongs_combination_pairs.csv)
+
 Entry types 入仕方式名: [./cbdb_entity_entries.csv](https://github.com/cbdb-project/named-entities-for-premodern-chinese-history-research/blob/main/cbdb_entity_entries.csv)
 
 Kinship types 親屬關係類別名: [./cbdb_entity_kinship_types.csv](https://github.com/cbdb-project/named-entities-for-premodern-chinese-history-research/blob/main/cbdb_entity_kinship_types.csv)

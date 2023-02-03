@@ -12,7 +12,7 @@ def combine_addr(addr_upper, addr_lower):
 	if addr_upper[-1]=="朝" or addr_lower[-1] == "朝":
 		return None
 	if addr_lower != addr_upper:
-		return [addr_upper+belongs_lower, addr_upper, belongs_lower]
+		return [addr_upper+addr_lower, addr_upper, addr_lower]
 	else:
 		return None
 
@@ -33,6 +33,7 @@ addr_id_to_name_dict = {i[0]: i[2] for i in addr_list}
 addr_type_list = [i[0] for i in pd.read_csv('input/cbdb_entity_address_types.csv').values.tolist()[1:]]
 
 # 1. addr_upper + addr_lower
+print("1. addr_upper + addr_lower...")
 for belongs_row in belongs_list:
 	if (belongs_row[0] not in addr_id_to_name_dict) or (belongs_row[1] not in addr_id_to_name_dict):
 		continue
@@ -44,6 +45,7 @@ for belongs_row in belongs_list:
 			output.append(combined_list)
 
 # 2. addr_upper + addr_lower_shorter
+print("2. addr_upper + addr_lower_shorter...")
 for belongs_row in belongs_list:
 	if (belongs_row[0] not in addr_id_to_name_dict) or (belongs_row[1] not in addr_id_to_name_dict):
 		continue
@@ -57,7 +59,8 @@ for belongs_row in belongs_list:
 				output.append(combined_list)
 				break
 
-# 3. addr_upper_shorter + addr_lower
+# 3. addr_upper_shorter + addr_lower3
+print("3. addr_upper_shorter + addr_lower...")
 for belongs_row in belongs_list:
 	if (belongs_row[0] not in addr_id_to_name_dict) or (belongs_row[1] not in addr_id_to_name_dict):
 		continue
@@ -71,6 +74,7 @@ for belongs_row in belongs_list:
 				output.append(combined_list)
 				break
 # 4. addr_upper_shorter + addr_lower_shorter
+print("4. addr_upper_shorter + addr_lower_shorter...")
 for belongs_row in belongs_list:
 	if (belongs_row[0] not in addr_id_to_name_dict) or (belongs_row[1] not in addr_id_to_name_dict):
 		continue
@@ -79,20 +83,23 @@ for belongs_row in belongs_list:
 		belongs_upper = addr_id_to_name_dict[belongs_row[1]]
 		for addr_type_row in addr_type_list:
 			belongs_upper_shorter = rstrip_word(belongs_upper,addr_type_row)
-			for addr_type_row in addr_type_list:
-				belongs_lower_shorter = rstrip_word(belongs_lower,addr_type_row)
-				combined_list = combine_addr(belongs_upper_shorter, belongs_lower_shorter)
-				if combined_list != None:
-					output.append(combined_list)
-					break
+			belongs_lower_shorter = rstrip_word(belongs_lower,addr_type_row)
+			combined_list = combine_addr(belongs_upper_shorter, belongs_lower_shorter)
+			if combined_list != None:
+				output.append(combined_list)
+				break
 
 # 5. remove possible duplicates
+print("5. remove possible duplicates...")
 output = remove_duplicates(output)
 
-# 6. sort by length of address name combinations
+# 6. sort by length of address name combinations and add header
+print("6. sort by length of address name combinations...")
 sorted_output = sorted(output, key=lambda x: len(x[0]), reverse=True)
+sorted_output.insert(0, ("combined", "upper", "lower"))
 
 # 7. write to csv
+print("7. write to csv...")
 write_list_to_csv(sorted_output, 'cbdb_address_belongs_combination_pairs.csv')
 
 # 8. print finished

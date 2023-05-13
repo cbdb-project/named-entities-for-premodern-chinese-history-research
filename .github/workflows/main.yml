@@ -24,7 +24,7 @@ jobs:
         run: |
           jupyter nbconvert --to notebook --execute scripts/*.ipynb
       
-      - name: Move generated files
+      - name: Add and move generated files
         run: |
           git add scripts/*.csv
           git mv scripts/*.csv .
@@ -33,7 +33,7 @@ jobs:
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v4.1.0
         with:
-          file_pattern: 'path/to/files/*.ipynb'
+          file_pattern: '*.csv'
           commit_message: 'Rerun notebooks and update generated files'
       
       - name: Push changes

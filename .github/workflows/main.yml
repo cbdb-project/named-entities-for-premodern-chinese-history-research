@@ -23,8 +23,21 @@ jobs:
       - name: Run notebooks
         run: |
           jupyter nbconvert --to notebook --execute scripts/*.ipynb
-
+      
+      - name: Move generated files
+        run: |
+          git mv scripts/*.csv ../
+          working-directory: ${{ github.workspace }}
+    
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v4.1.0
         with:
+          file_pattern: 'path/to/files/*.ipynb'
           commit_message: 'Rerun notebooks and update generated files'
+      
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+            github_token: ${{ secrets.ACCESS_TOKEN }}
+            branch: test_action
+

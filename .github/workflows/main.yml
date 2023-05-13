@@ -32,13 +32,13 @@ jobs:
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v4.1.0
         with:
-          github_token: ${{ secrets.ACCESS_TOKEN }}
+          github_token: ${{ secrets.MERAKTX_TOKEN_FOR_GIT_ACTION }}
           file_pattern: '*.csv'
           commit_message: 'Rerun notebooks and update generated files'
       
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
-            github_token: ${{ secrets.ACCESS_TOKEN }}
+            github_token: ${{ secrets.MERAKTX_TOKEN_FOR_GIT_ACTION }}
             branch: test_action
 

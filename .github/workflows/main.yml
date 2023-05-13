@@ -18,7 +18,8 @@ jobs:
       - name: Install dependencies
         run: |
           pip install jupyter nbconvert
-          # Replace with any additional dependencies required by your notebooks
+          pip install pandas
+          pip install sqlite3
 
       - name: Run notebooks
         run: |

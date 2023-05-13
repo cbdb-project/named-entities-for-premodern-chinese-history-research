@@ -1,0 +1,30 @@
+name: Run all notebooks
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.11
+
+      - name: Install dependencies
+        run: |
+          pip install jupyter nbconvert
+          # Replace with any additional dependencies required by your notebooks
+
+      - name: Run notebooks
+        run: |
+          jupyter nbconvert --to notebook --execute scripts/*.ipynb
+
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v4.1.0
+        with:
+          commit_message: 'Rerun notebooks and update generated files'

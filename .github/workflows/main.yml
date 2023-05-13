@@ -32,6 +32,7 @@ jobs:
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v4.1.0
         with:
+          github_token: ${{ secrets.ACCESS_TOKEN }}
           file_pattern: '*.csv'
           commit_message: 'Rerun notebooks and update generated files'
       

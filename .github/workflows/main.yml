@@ -40,5 +40,5 @@ jobs:
         uses: ad-m/github-push-action@master
         with:
             github_token: ${{ secrets.MERAKTX_TOKEN_FOR_GIT_ACTION }}
-            branch: test_action
+            branch: main
 

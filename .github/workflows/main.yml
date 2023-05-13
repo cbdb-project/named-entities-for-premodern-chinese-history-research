@@ -27,7 +27,7 @@ jobs:
       - name: Add and move generated files
         run: |
           git add scripts/*.csv
-          git mv scripts/*.csv .
+          git mv -f scripts/*.csv .
           working-directory: ${{ github.workspace }}
     
       - name: Commit changes

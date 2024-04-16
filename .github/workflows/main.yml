@@ -26,7 +26,7 @@ jobs:
       
       - name: Add and move generated files
         run: |
-          git add scripts/*.csv
+          git add scripts/*.csv scripts/named-entities-for-premodern-chinese-history-research
           git mv -f scripts/*.csv .
           rm -rf scripts/cbdb_sqlite/
           rm scripts/*.nbconvert.ipynb

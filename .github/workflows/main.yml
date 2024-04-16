@@ -28,6 +28,9 @@ jobs:
         run: |
           git add scripts/*.csv
           git mv -f scripts/*.csv .
+          rm -rf scripts/cbdb_sqlite/
+          rm scripts/*.nbconvert.ipynb
+          rm scripts/latest.db
     
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v4.1.0
